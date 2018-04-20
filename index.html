@@ -323,9 +323,13 @@
                 
               
 
-              <time title="Created: 2018-04-20 09:07:32" itemprop="dateCreated datePublished" datetime="2018-04-20T09:07:32+08:00">2018-04-20</time>
+              <time title="Created: 2018-04-20 09:07:32 / Modified: 14:06:18" itemprop="dateCreated datePublished" datetime="2018-04-20T09:07:32+08:00">2018-04-20</time>
             
 
+            
+              
+
+              
             
           </span>
 
@@ -359,7 +363,30 @@
       
         
           
-            
+            <h3 id="搭建vpn"><a href="#搭建vpn" class="headerlink" title="搭建vpn"></a>搭建vpn</h3><h4 id="一、购买服务器"><a href="#一、购买服务器" class="headerlink" title="一、购买服务器"></a>一、购买服务器</h4><p>(账户：<a href="mailto:349210796@qq.com" target="_blank" rel="noopener">349210796@qq.com</a> 密码：441237399Feng)</p>
+<ol>
+<li>购买国外服务器的地址：”<a href="https://my.vultr.com/welcome/&quot;(中文教程：https://buy.shangyufeidi.com/vultr/jiaocheng/)" target="_blank" rel="noopener">https://my.vultr.com/welcome/&quot;(中文教程：https://buy.shangyufeidi.com/vultr/jiaocheng/)</a></li>
+</ol>
+<h4 id="二、链接服务器：ssh-root-服务器地址"><a href="#二、链接服务器：ssh-root-服务器地址" class="headerlink" title="二、链接服务器：ssh root@服务器地址"></a>二、链接服务器：ssh root@服务器地址</h4><ol>
+<li>例如：ssh <a href="mailto:root@45.32.165.118" target="_blank" rel="noopener">root@45.32.165.118</a></li>
+<li>断开服务器：logout</li>
+</ol>
+<h4 id="三、-安装shadowsocks"><a href="#三、-安装shadowsocks" class="headerlink" title="三、 安装shadowsocks"></a>三、 安装shadowsocks</h4><h5 id="1-更新apt-get"><a href="#1-更新apt-get" class="headerlink" title="1. 更新apt-get"></a>1. 更新apt-get</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1. apt-get update</span><br><span class="line">2. apt-get install python-pip //安装python-pip</span><br></pre></td></tr></table></figure>
+<h5 id="2-安装python-pip"><a href="#2-安装python-pip" class="headerlink" title="2. 安装python-pip"></a>2. 安装python-pip</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1. sudo apt-get purge python-pip</span><br><span class="line">2. wget https://bootstrap.pypa.io/get-pip.py</span><br><span class="line">3. python get-pip.py</span><br><span class="line">4. hash -r</span><br></pre></td></tr></table></figure>
+<h5 id="3-安装shadowsocks"><a href="#3-安装shadowsocks" class="headerlink" title="3. 安装shadowsocks"></a>3. 安装shadowsocks</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1. pip install shadowsocks // 安装shadowsocks</span><br><span class="line">2. ssserver -c /etc/shadowsocks.json -d start //启动shadowsocks</span><br></pre></td></tr></table></figure>
+<h5 id="4-配置shadowsocks"><a href="#4-配置shadowsocks" class="headerlink" title="4. 配置shadowsocks"></a>4. 配置shadowsocks</h5><ol>
+<li><p>在服务器/etc文件夹下创建shadowsocks.json，需要自己创建，默认是没有的 注意端口修改的是server_port, local_port是固定的,password是连接此服务端口的密码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;server&quot;: &quot;0.0.0.0&quot;,</span><br><span class="line">  &quot;server_port&quot;: 6789,//端口</span><br><span class="line">  &quot;local_address&quot;: &quot;127.0.0.1&quot;,</span><br><span class="line">  &quot;local_port&quot;: 1080,</span><br><span class="line">  &quot;password&quot;: &quot;******&quot;,</span><br><span class="line">  &quot;timeout&quot;: 300,</span><br><span class="line">  &quot;method&quot;: &quot;aes-256-cfb&quot;,</span><br><span class="line">  &quot;fast_open&quot;: false,</span><br><span class="line">  &quot;workers&quot;: 1</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置以后重启shadowsocks:</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ssserver -c /etc/shadowsocks.json -d restart</span><br></pre></td></tr></table></figure>
+<h4 id="四、配置aws和使用shadowsocks翻墙"><a href="#四、配置aws和使用shadowsocks翻墙" class="headerlink" title="四、配置aws和使用shadowsocks翻墙"></a>四、配置aws和使用shadowsocks翻墙</h4><ol>
+<li>安装之后，添加服务器，地址为AWS的外网地址，登录AWS控制台，查看正在运行中的实例，找到公有ip。 端口号为刚才配置Shadowsocks服务器时的端口号，密码也是刚才配置的，设置完之后保存</li>
+<li>配置好shaodowsocks后，还需要将配置中的端口打开,这样客户端的服务才能链接得上shadowsocks服务</li>
+</ol>
+
           
         
       

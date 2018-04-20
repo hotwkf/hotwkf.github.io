@@ -102,17 +102,17 @@
 
 
 
-  <meta name="description" content="搭建vpn一、购买服务器 购买国外服务器的地址：”https://my.vultr.com/welcome/&amp;quot;(中文教程：https://buy.shangyufeidi.com/vultr/jiaocheng/)  二、链接服务器：ssh root@服务器地址 例如：ssh root@45.32.165.118 断开服务器：logout  三、 安装shadowsocks1. 更新ap">
+  <meta name="description" content="搭建vpn一、购买服务器 购买国外服务器的地址：”https://my.vultr.com/welcome/&amp;quot;(中文教程：https://buy.shangyufeidi.com/vultr/jiaocheng/)  二、链接服务器：ssh root@服务器地址 例如：ssh root@45.32.165.118 断开服务器：logout  &amp;lt;! –more–&amp;gt; 三、 安装s">
 <meta property="og:type" content="article">
 <meta property="og:title" content="搭建vpn">
 <meta property="og:url" content="http://www.hegangjupao.com/2018/04/20/hexo-demo/index.html">
 <meta property="og:site_name" content="Hotwkf">
-<meta property="og:description" content="搭建vpn一、购买服务器 购买国外服务器的地址：”https://my.vultr.com/welcome/&amp;quot;(中文教程：https://buy.shangyufeidi.com/vultr/jiaocheng/)  二、链接服务器：ssh root@服务器地址 例如：ssh root@45.32.165.118 断开服务器：logout  三、 安装shadowsocks1. 更新ap">
+<meta property="og:description" content="搭建vpn一、购买服务器 购买国外服务器的地址：”https://my.vultr.com/welcome/&amp;quot;(中文教程：https://buy.shangyufeidi.com/vultr/jiaocheng/)  二、链接服务器：ssh root@服务器地址 例如：ssh root@45.32.165.118 断开服务器：logout  &amp;lt;! –more–&amp;gt; 三、 安装s">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-04-20T06:11:42.951Z">
+<meta property="og:updated_time" content="2018-04-20T06:16:46.820Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建vpn">
-<meta name="twitter:description" content="搭建vpn一、购买服务器 购买国外服务器的地址：”https://my.vultr.com/welcome/&amp;quot;(中文教程：https://buy.shangyufeidi.com/vultr/jiaocheng/)  二、链接服务器：ssh root@服务器地址 例如：ssh root@45.32.165.118 断开服务器：logout  三、 安装shadowsocks1. 更新ap">
+<meta name="twitter:description" content="搭建vpn一、购买服务器 购买国外服务器的地址：”https://my.vultr.com/welcome/&amp;quot;(中文教程：https://buy.shangyufeidi.com/vultr/jiaocheng/)  二、链接服务器：ssh root@服务器地址 例如：ssh root@45.32.165.118 断开服务器：logout  &amp;lt;! –more–&amp;gt; 三、 安装s">
 
 
 
@@ -319,7 +319,7 @@
                 
               
 
-              <time title="Created: 2018-04-20 09:07:32 / Modified: 14:11:42" itemprop="dateCreated datePublished" datetime="2018-04-20T09:07:32+08:00">2018-04-20</time>
+              <time title="Created: 2018-04-20 09:07:32 / Modified: 14:16:46" itemprop="dateCreated datePublished" datetime="2018-04-20T09:07:32+08:00">2018-04-20</time>
             
 
             
@@ -364,6 +364,7 @@
 <li>例如：ssh <a href="mailto:root@45.32.165.118" target="_blank" rel="noopener">root@45.32.165.118</a></li>
 <li>断开服务器：logout</li>
 </ol>
+<p>&lt;! –more–&gt;</p>
 <h4 id="三、-安装shadowsocks"><a href="#三、-安装shadowsocks" class="headerlink" title="三、 安装shadowsocks"></a>三、 安装shadowsocks</h4><h5 id="1-更新apt-get"><a href="#1-更新apt-get" class="headerlink" title="1. 更新apt-get"></a>1. 更新apt-get</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1. apt-get update</span><br><span class="line">2. apt-get install python-pip //安装python-pip</span><br></pre></td></tr></table></figure>
 <h5 id="2-安装python-pip"><a href="#2-安装python-pip" class="headerlink" title="2. 安装python-pip"></a>2. 安装python-pip</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1. sudo apt-get purge python-pip</span><br><span class="line">2. wget https://bootstrap.pypa.io/get-pip.py</span><br><span class="line">3. python get-pip.py</span><br><span class="line">4. hash -r</span><br></pre></td></tr></table></figure>
 <h5 id="3-安装shadowsocks"><a href="#3-安装shadowsocks" class="headerlink" title="3. 安装shadowsocks"></a>3. 安装shadowsocks</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1. pip install shadowsocks // 安装shadowsocks</span><br><span class="line">2. ssserver -c /etc/shadowsocks.json -d start //启动shadowsocks</span><br></pre></td></tr></table></figure>

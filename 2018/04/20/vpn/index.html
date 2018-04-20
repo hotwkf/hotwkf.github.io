@@ -102,17 +102,17 @@
 
 
 
-  <meta name="description" content="1、ubuntu使用apt get install 安装nginxapt-get install nginx 2、启动nginxservice nginx start 3、防火墙允许访问接口sudo ufw allow 80 4、解析域名5、修改nginx域名访问的文件夹路径并重新启动nginx（1）    修改default(注意：文件不要放在root下，因为无权限，index文件夹放在/use">
+  <meta name="description" content="1、ubuntu使用apt get install 安装nginxapt-get install nginx 2、启动nginxservice nginx start 3、防火墙允许访问接口sudo ufw allow 80 4、解析域名">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vpn">
 <meta property="og:url" content="http://www.hegangjupao.com/2018/04/20/vpn/index.html">
 <meta property="og:site_name" content="Hotwkf">
-<meta property="og:description" content="1、ubuntu使用apt get install 安装nginxapt-get install nginx 2、启动nginxservice nginx start 3、防火墙允许访问接口sudo ufw allow 80 4、解析域名5、修改nginx域名访问的文件夹路径并重新启动nginx（1）    修改default(注意：文件不要放在root下，因为无权限，index文件夹放在/use">
+<meta property="og:description" content="1、ubuntu使用apt get install 安装nginxapt-get install nginx 2、启动nginxservice nginx start 3、防火墙允许访问接口sudo ufw allow 80 4、解析域名">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-04-20T06:31:57.763Z">
+<meta property="og:updated_time" content="2018-04-20T06:34:17.169Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vpn">
-<meta name="twitter:description" content="1、ubuntu使用apt get install 安装nginxapt-get install nginx 2、启动nginxservice nginx start 3、防火墙允许访问接口sudo ufw allow 80 4、解析域名5、修改nginx域名访问的文件夹路径并重新启动nginx（1）    修改default(注意：文件不要放在root下，因为无权限，index文件夹放在/use">
+<meta name="twitter:description" content="1、ubuntu使用apt get install 安装nginxapt-get install nginx 2、启动nginxservice nginx start 3、防火墙允许访问接口sudo ufw allow 80 4、解析域名">
 
 
 
@@ -319,7 +319,7 @@
                 
               
 
-              <time title="Created: 2018-04-20 14:30:58 / Modified: 14:31:57" itemprop="dateCreated datePublished" datetime="2018-04-20T14:30:58+08:00">2018-04-20</time>
+              <time title="Created: 2018-04-20 14:30:58 / Modified: 14:34:17" itemprop="dateCreated datePublished" datetime="2018-04-20T14:30:58+08:00">2018-04-20</time>
             
 
             
@@ -360,7 +360,8 @@
         <h4 id="1、ubuntu使用apt-get-install-安装nginx"><a href="#1、ubuntu使用apt-get-install-安装nginx" class="headerlink" title="1、ubuntu使用apt get install 安装nginx"></a>1、ubuntu使用apt get install 安装nginx</h4><p>apt-get install nginx</p>
 <h4 id="2、启动nginx"><a href="#2、启动nginx" class="headerlink" title="2、启动nginx"></a>2、启动nginx</h4><p>service nginx start</p>
 <h4 id="3、防火墙允许访问接口"><a href="#3、防火墙允许访问接口" class="headerlink" title="3、防火墙允许访问接口"></a>3、防火墙允许访问接口</h4><p>sudo ufw allow 80</p>
-<h4 id="4、解析域名"><a href="#4、解析域名" class="headerlink" title="4、解析域名"></a>4、解析域名</h4><h4 id="5、修改nginx域名访问的文件夹路径并重新启动nginx"><a href="#5、修改nginx域名访问的文件夹路径并重新启动nginx" class="headerlink" title="5、修改nginx域名访问的文件夹路径并重新启动nginx"></a>5、修改nginx域名访问的文件夹路径并重新启动nginx</h4><p>（1）    修改default(注意：文件不要放在root下，因为无权限，index文件夹放在/user/share/nginx/下)</p>
+<h4 id="4、解析域名"><a href="#4、解析域名" class="headerlink" title="4、解析域名"></a>4、解析域名</h4><a id="more"></a>
+<h4 id="5、修改nginx域名访问的文件夹路径并重新启动nginx"><a href="#5、修改nginx域名访问的文件夹路径并重新启动nginx" class="headerlink" title="5、修改nginx域名访问的文件夹路径并重新启动nginx"></a>5、修改nginx域名访问的文件夹路径并重新启动nginx</h4><p>（1）    修改default(注意：文件不要放在root下，因为无权限，index文件夹放在/user/share/nginx/下)</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">本地上传文件夹 注：在本地命令行界面敲</span><br><span class="line">scp -r /Users/wkf/HBuilderProjects/saoma root@45.32.165.118:/usr/share/nginx</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">服务器AAA往服务器BBB传文件夹</span><br><span class="line">scp -r root@AAA:/usr/share/nginx root@BBB:/usr/share/nginx</span><br></pre></td></tr></table></figure>
 <p>（2）    监听同一域名下不同的端口，例如90端口，如需增加继续增加server</p>

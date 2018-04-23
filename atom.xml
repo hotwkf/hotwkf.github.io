@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hotwkf</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://www.hegangjupao.com/"/>
+  <updated>2018-04-23T01:08:58.334Z</updated>
+  <id>http://www.hegangjupao.com/</id>
+  
+  <author>
+    <name>Wangkaifeng</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git的基本操作</title>
+    <link href="http://www.hegangjupao.com/2018/04/23/git/"/>
+    <id>http://www.hegangjupao.com/2018/04/23/git/</id>
+    <published>2018-04-23T01:06:51.000Z</published>
+    <updated>2018-04-23T01:08:58.334Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="克隆一个项目-git-clone-ssh-url"><a href="#克隆一个项目-git-clone-ssh-url" class="headerlink" title="克隆一个项目: git clone ssh-url"></a>克隆一个项目: git clone ssh-url</h3><h3 id="查看工作目录状态：git-status"><a href="#查看工作目录状态：git-status" class="headerlink" title="查看工作目录状态：git status"></a>查看工作目录状态：git status</h3><h3 id="查看本地分支：git-branch"><a href="#查看本地分支：git-branch" class="headerlink" title="查看本地分支：git branch"></a>查看本地分支：git branch</h3><h3 id="查看远程分支：git-branch-r"><a href="#查看远程分支：git-branch-r" class="headerlink" title="查看远程分支：git branch -r"></a>查看远程分支：git branch -r</h3><h3 id="查看本地和远程分支：git-branch-a"><a href="#查看本地和远程分支：git-branch-a" class="headerlink" title="查看本地和远程分支：git branch -a"></a>查看本地和远程分支：git branch -a</h3><h3 id="在master下新建一个分支：git-branch-develop"><a href="#在master下新建一个分支：git-branch-develop" class="headerlink" title="在master下新建一个分支：git branch develop"></a>在master下新建一个分支：git branch develop</h3><blockquote><p>此时本地就多了一个develop分支，其工作目录和master相同，develop分支此时没有跟踪任何分支</p></blockquote><h3 id="在远端新建develop分支，并且让本地develop分支跟踪它：git-push-u-origin-develop"><a href="#在远端新建develop分支，并且让本地develop分支跟踪它：git-push-u-origin-develop" class="headerlink" title="在远端新建develop分支，并且让本地develop分支跟踪它：git push -u origin develop"></a>在远端新建develop分支，并且让本地develop分支跟踪它：git push -u origin develop</h3><a id="more"></a><blockquote><p>此时远端就有一个develop分支了，并且本地develop分支已经跟踪了它</p></blockquote><h3 id="切换到master分支：git-checkout-master"><a href="#切换到master分支：git-checkout-master" class="headerlink" title="切换到master分支：git checkout master"></a>切换到master分支：git checkout master</h3><blockquote><p>此时工作目录就切换到master了</p></blockquote><h3 id="拉取远程develop分支到本地origin-develop分支，但是不会和本地develop分支merge：git-fetch-origin-develop"><a href="#拉取远程develop分支到本地origin-develop分支，但是不会和本地develop分支merge：git-fetch-origin-develop" class="headerlink" title="拉取远程develop分支到本地origin/develop分支，但是不会和本地develop分支merge：git fetch origin develop"></a>拉取远程develop分支到本地origin/develop分支，但是不会和本地develop分支merge：git fetch origin develop</h3><h3 id="比较本地develop分支和本地origin-develop分支的区别：git-log-p-develop-origin-develop"><a href="#比较本地develop分支和本地origin-develop分支的区别：git-log-p-develop-origin-develop" class="headerlink" title="比较本地develop分支和本地origin/develop分支的区别：git log -p develop..origin/develop"></a>比较本地develop分支和本地origin/develop分支的区别：git log -p develop..origin/develop</h3><h3 id="合并内容到本地develop分支：git-merge-origin-develop"><a href="#合并内容到本地develop分支：git-merge-origin-develop" class="headerlink" title="合并内容到本地develop分支：git merge origin/develop"></a>合并内容到本地develop分支：git merge origin/develop</h3><h3 id="拉下远程分支develop并且自动和本地develop分支merge：git-pull-origin-develop"><a href="#拉下远程分支develop并且自动和本地develop分支merge：git-pull-origin-develop" class="headerlink" title="拉下远程分支develop并且自动和本地develop分支merge：git pull origin develop"></a>拉下远程分支develop并且自动和本地develop分支merge：git pull origin develop</h3><h3 id="修改的文件让git托管：git-add"><a href="#修改的文件让git托管：git-add" class="headerlink" title="修改的文件让git托管：git add ."></a>修改的文件让git托管：git add .</h3><blockquote><p>. 表示所有文件</p></blockquote><h3 id="提交修改到本地仓库：git-commit-m-“something-do”"><a href="#提交修改到本地仓库：git-commit-m-“something-do”" class="headerlink" title="提交修改到本地仓库：git commit -m “something do”"></a>提交修改到本地仓库：git commit -m “something do”</h3><blockquote><p>-m 后面跟的是提交说明</p></blockquote><h3 id="像远程develop分支推送：git-push-origin-develop"><a href="#像远程develop分支推送：git-push-origin-develop" class="headerlink" title="像远程develop分支推送：git push origin develop"></a>像远程develop分支推送：git push origin develop</h3><h3 id="切换至master分支，本地master分支合并本地develop分支：git-merge-develop"><a href="#切换至master分支，本地master分支合并本地develop分支：git-merge-develop" class="headerlink" title="切换至master分支，本地master分支合并本地develop分支：git merge develop"></a>切换至master分支，本地master分支合并本地develop分支：git merge develop</h3><h3 id="删除远程develop分支：git-push-origin-–delete-develop"><a href="#删除远程develop分支：git-push-origin-–delete-develop" class="headerlink" title="删除远程develop分支：git push origin –delete develop"></a>删除远程develop分支：git push origin –delete develop</h3><h3 id="在本地master分支下删除本地develop分支：git-branch-d-fwt"><a href="#在本地master分支下删除本地develop分支：git-branch-d-fwt" class="headerlink" title="在本地master分支下删除本地develop分支：git branch -d fwt"></a>在本地master分支下删除本地develop分支：git branch -d fwt</h3><h3 id="在本地develop分支下查看最近3次提交的log：git-log-3"><a href="#在本地develop分支下查看最近3次提交的log：git-log-3" class="headerlink" title="在本地develop分支下查看最近3次提交的log：git log -3"></a>在本地develop分支下查看最近3次提交的log：git log -3</h3><blockquote><p>打印3条信息中commit后面的一串编码就是cimmitId</p></blockquote><h3 id="本地develop分支版本回滚到某次提交：git-reset-–hard-commitId"><a href="#本地develop分支版本回滚到某次提交：git-reset-–hard-commitId" class="headerlink" title="本地develop分支版本回滚到某次提交：git reset –hard commitId"></a>本地develop分支版本回滚到某次提交：git reset –hard commitId</h3><h3 id="强制提交用本地develop分支覆盖远程develop分支：git-push-f-origin-develop"><a href="#强制提交用本地develop分支覆盖远程develop分支：git-push-f-origin-develop" class="headerlink" title="强制提交用本地develop分支覆盖远程develop分支：git push -f origin develop"></a>强制提交用本地develop分支覆盖远程develop分支：git push -f origin develop</h3>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;克隆一个项目-git-clone-ssh-url&quot;&gt;&lt;a href=&quot;#克隆一个项目-git-clone-ssh-url&quot; class=&quot;headerlink&quot; title=&quot;克隆一个项目: git clone ssh-url&quot;&gt;&lt;/a&gt;克隆一个项目: git clone ssh-url&lt;/h3&gt;&lt;h3 id=&quot;查看工作目录状态：git-status&quot;&gt;&lt;a href=&quot;#查看工作目录状态：git-status&quot; class=&quot;headerlink&quot; title=&quot;查看工作目录状态：git status&quot;&gt;&lt;/a&gt;查看工作目录状态：git status&lt;/h3&gt;&lt;h3 id=&quot;查看本地分支：git-branch&quot;&gt;&lt;a href=&quot;#查看本地分支：git-branch&quot; class=&quot;headerlink&quot; title=&quot;查看本地分支：git branch&quot;&gt;&lt;/a&gt;查看本地分支：git branch&lt;/h3&gt;&lt;h3 id=&quot;查看远程分支：git-branch-r&quot;&gt;&lt;a href=&quot;#查看远程分支：git-branch-r&quot; class=&quot;headerlink&quot; title=&quot;查看远程分支：git branch -r&quot;&gt;&lt;/a&gt;查看远程分支：git branch -r&lt;/h3&gt;&lt;h3 id=&quot;查看本地和远程分支：git-branch-a&quot;&gt;&lt;a href=&quot;#查看本地和远程分支：git-branch-a&quot; class=&quot;headerlink&quot; title=&quot;查看本地和远程分支：git branch -a&quot;&gt;&lt;/a&gt;查看本地和远程分支：git branch -a&lt;/h3&gt;&lt;h3 id=&quot;在master下新建一个分支：git-branch-develop&quot;&gt;&lt;a href=&quot;#在master下新建一个分支：git-branch-develop&quot; class=&quot;headerlink&quot; title=&quot;在master下新建一个分支：git branch develop&quot;&gt;&lt;/a&gt;在master下新建一个分支：git branch develop&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;此时本地就多了一个develop分支，其工作目录和master相同，develop分支此时没有跟踪任何分支&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;在远端新建develop分支，并且让本地develop分支跟踪它：git-push-u-origin-develop&quot;&gt;&lt;a href=&quot;#在远端新建develop分支，并且让本地develop分支跟踪它：git-push-u-origin-develop&quot; class=&quot;headerlink&quot; title=&quot;在远端新建develop分支，并且让本地develop分支跟踪它：git push -u origin develop&quot;&gt;&lt;/a&gt;在远端新建develop分支，并且让本地develop分支跟踪它：git push -u origin develop&lt;/h3&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>hexo 搭建</title>
+    <link href="http://www.hegangjupao.com/2018/04/20/hexo-set/"/>
+    <id>http://www.hegangjupao.com/2018/04/20/hexo-set/</id>
+    <published>2018-04-20T06:37:18.000Z</published>
+    <updated>2018-04-20T06:38:40.220Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-安装-amp-搭建"><a href="#1-安装-amp-搭建" class="headerlink" title="1.安装 &amp; 搭建"></a>1.安装 &amp; 搭建</h2><ol><li>安装Git：安装后，注册 Github 账号，配置 SSH）,打开 Git Bash,接下来的命令均在Git Bash中执行</li><li>安装Node.js</li><li>安装 Hexo : $npm install -g hexo</li><li>安装依赖包： $npm install</li><li>新建博客文件夹：cd到该文件夹，执行$hexo init</li><li>新建Github仓库：仓库名必须为你的Github名.github.io，要不然就不能使用Github Pages服务了。。。<h2 id="2-配置-SSH"><a href="#2-配置-SSH" class="headerlink" title="2.配置 SSH"></a>2.配置 SSH</h2></li><li>本地生成公钥私钥<br>　$ssh-keygen -t rsa -C “你的邮件地址”</li><li>添加公钥到 Github<br>根据上一步的提示，找到公钥文件（默认为id_rsa.pub），用记事本打开，全选并复制。</li><li>登录 Github，右上角 头像 -&gt; Settings —&gt; SSH keys —&gt; Add SSH key。把公钥粘贴到key中，填好title并点击 Add key。</li><li><p>git bash中输入命令$ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>，选yes，等待片刻可看到成功提示。</p><a id="more"></a><h2 id="3-NexT主题下载"><a href="#3-NexT主题下载" class="headerlink" title="3. NexT主题下载"></a>3. NexT主题下载</h2><p>NexT 主题是由 iissnan 大神所制作的一款简洁美观不失逼格的主题：</p></li><li><p>进入博客根目录/themes/, 执行 git clone <a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">https://github.com/theme-next/hexo-theme-next</a> themes/next</p></li><li><p>打开站点配置文件 _config.yml，找到 theme 字段，并将其值更改为 next</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure></li><li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">启用配置文件</span><br><span class="line">hexo g</span><br><span class="line">发布到github</span><br><span class="line">hexo d -g</span><br></pre></td></tr></table></figure></li></ol><h2 id="4-发布"><a href="#4-发布" class="headerlink" title="4. 发布"></a>4. 发布</h2><p>使用以下两条命令进行发布，发布成功后可在浏览器中使用你的github名.github.io进入你的博客~</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">把文章折叠起来：</span><br><span class="line">在想要折叠的位置添加&lt;!--more--&gt;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1. $hexo new &quot;My New Post&quot;</span><br><span class="line">2.直接将写好的md添加</span><br><span class="line">3. $hexo clean</span><br><span class="line">4. $hexo d -g</span><br></pre></td></tr></table></figure><h2 id="5-绑定域名"><a href="#5-绑定域名" class="headerlink" title="5. 绑定域名"></a>5. 绑定域名</h2><ol><li>申请个人域名</li><li>域名添加解析</li><li>github官网提供的两个主机ip地址：192.30.252.153 和 192.30.252.153， 将这两个作为主机地址，给域名的DNS解析添加两个 A记录，然后再添加一个 GNAME记录 主机地址填的是我们原本用来访问github博客的地址： githubname.github.io (hotwkf.github.io)</li><li>创建 GNAME 文件：<br>在hexo本地目录 source 目录下面新建一个文件，取名为 GNAME (无后缀)，内容就是上面所说到的自己的域名如下：<a href="http://www.hegangjupao.com">www.hegangjupao.com</a></li><li><p>运行hexo指令使配置修改起效</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">启用配置文件</span><br><span class="line">hexo g</span><br><span class="line">发布到github</span><br><span class="line">hexo d -g</span><br></pre></td></tr></table></figure></li><li><p>在github中设置：<br>打开博客在Github中的地址，然后切换到 Settings页，设置Custom domain内容为我们自己的域名值（例如：我的域名是<a href="http://www.hegangjupao.com），点击Save按钮保存" target="_blank" rel="noopener">www.hegangjupao.com），点击Save按钮保存</a></p></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1-安装-amp-搭建&quot;&gt;&lt;a href=&quot;#1-安装-amp-搭建&quot; class=&quot;headerlink&quot; title=&quot;1.安装 &amp;amp; 搭建&quot;&gt;&lt;/a&gt;1.安装 &amp;amp; 搭建&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;安装Git：安装后，注册 Github 账号，配置 SSH）,打开 Git Bash,接下来的命令均在Git Bash中执行&lt;/li&gt;
+&lt;li&gt;安装Node.js&lt;/li&gt;
+&lt;li&gt;安装 Hexo : $npm install -g hexo&lt;/li&gt;
+&lt;li&gt;安装依赖包： $npm install&lt;/li&gt;
+&lt;li&gt;新建博客文件夹：cd到该文件夹，执行$hexo init&lt;/li&gt;
+&lt;li&gt;新建Github仓库：仓库名必须为你的Github名.github.io，要不然就不能使用Github Pages服务了。。。&lt;h2 id=&quot;2-配置-SSH&quot;&gt;&lt;a href=&quot;#2-配置-SSH&quot; class=&quot;headerlink&quot; title=&quot;2.配置 SSH&quot;&gt;&lt;/a&gt;2.配置 SSH&lt;/h2&gt;&lt;/li&gt;
+&lt;li&gt;本地生成公钥私钥&lt;br&gt;　$ssh-keygen -t rsa -C “你的邮件地址”&lt;/li&gt;
+&lt;li&gt;添加公钥到 Github&lt;br&gt;根据上一步的提示，找到公钥文件（默认为id_rsa.pub），用记事本打开，全选并复制。&lt;/li&gt;
+&lt;li&gt;登录 Github，右上角 头像 -&amp;gt; Settings —&amp;gt; SSH keys —&amp;gt; Add SSH key。把公钥粘贴到key中，填好title并点击 Add key。&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;git bash中输入命令$ssh -T &lt;a href=&quot;mailto:git@github.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;git@github.com&lt;/a&gt;，选yes，等待片刻可看到成功提示。&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>vpn</title>
+    <link href="http://www.hegangjupao.com/2018/04/20/vpn/"/>
+    <id>http://www.hegangjupao.com/2018/04/20/vpn/</id>
+    <published>2018-04-20T06:30:58.000Z</published>
+    <updated>2018-04-20T06:34:17.169Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="1、ubuntu使用apt-get-install-安装nginx"><a href="#1、ubuntu使用apt-get-install-安装nginx" class="headerlink" title="1、ubuntu使用apt get install 安装nginx"></a>1、ubuntu使用apt get install 安装nginx</h4><p>apt-get install nginx</p><h4 id="2、启动nginx"><a href="#2、启动nginx" class="headerlink" title="2、启动nginx"></a>2、启动nginx</h4><p>service nginx start</p><h4 id="3、防火墙允许访问接口"><a href="#3、防火墙允许访问接口" class="headerlink" title="3、防火墙允许访问接口"></a>3、防火墙允许访问接口</h4><p>sudo ufw allow 80</p><h4 id="4、解析域名"><a href="#4、解析域名" class="headerlink" title="4、解析域名"></a>4、解析域名</h4><a id="more"></a><h4 id="5、修改nginx域名访问的文件夹路径并重新启动nginx"><a href="#5、修改nginx域名访问的文件夹路径并重新启动nginx" class="headerlink" title="5、修改nginx域名访问的文件夹路径并重新启动nginx"></a>5、修改nginx域名访问的文件夹路径并重新启动nginx</h4><p>（1）    修改default(注意：文件不要放在root下，因为无权限，index文件夹放在/user/share/nginx/下)</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">本地上传文件夹 注：在本地命令行界面敲</span><br><span class="line">scp -r /Users/wkf/HBuilderProjects/saoma root@45.32.165.118:/usr/share/nginx</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">服务器AAA往服务器BBB传文件夹</span><br><span class="line">scp -r root@AAA:/usr/share/nginx root@BBB:/usr/share/nginx</span><br></pre></td></tr></table></figure><p>（2）    监听同一域名下不同的端口，例如90端口，如需增加继续增加server</p><p>(3)  监听不同域名<br>    进入 /etc/nginx/ 下,修改 vi nginx.conf </p><p>好处：.conf 文件尽量一个项目一个，并放入conf.d文件夹中，利于管理。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conf.d/*.conf 会默认读取以.conf结尾的文件</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sites-enabled/*会默认读取所有文件</span><br></pre></td></tr></table></figure><html><br><!--在这里插入内容--><br>//其中一个例子：<br>/etc/nginx/sites-enabled 文件夹中的default的server 中的server_name 是区分不同域名的关键，根据域名跳转不同路径下的页面<br><br></html><h4 id="6、重新启动nginx"><a href="#6、重新启动nginx" class="headerlink" title="6、重新启动nginx"></a>6、重新启动nginx</h4><ol><li>/usr/local/webserver/nginx/sbin/nginx -s reload            # 重新载入配置文件</li><li>/usr/local/webserver/nginx/sbin/nginx -s reopen            # 重启 Nginx</li><li>/usr/local/webserver/nginx/sbin/nginx -s stop              # 停止 Nginx</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;1、ubuntu使用apt-get-install-安装nginx&quot;&gt;&lt;a href=&quot;#1、ubuntu使用apt-get-install-安装nginx&quot; class=&quot;headerlink&quot; title=&quot;1、ubuntu使用apt get install 安装nginx&quot;&gt;&lt;/a&gt;1、ubuntu使用apt get install 安装nginx&lt;/h4&gt;&lt;p&gt;apt-get install nginx&lt;/p&gt;
+&lt;h4 id=&quot;2、启动nginx&quot;&gt;&lt;a href=&quot;#2、启动nginx&quot; class=&quot;headerlink&quot; title=&quot;2、启动nginx&quot;&gt;&lt;/a&gt;2、启动nginx&lt;/h4&gt;&lt;p&gt;service nginx start&lt;/p&gt;
+&lt;h4 id=&quot;3、防火墙允许访问接口&quot;&gt;&lt;a href=&quot;#3、防火墙允许访问接口&quot; class=&quot;headerlink&quot; title=&quot;3、防火墙允许访问接口&quot;&gt;&lt;/a&gt;3、防火墙允许访问接口&lt;/h4&gt;&lt;p&gt;sudo ufw allow 80&lt;/p&gt;
+&lt;h4 id=&quot;4、解析域名&quot;&gt;&lt;a href=&quot;#4、解析域名&quot; class=&quot;headerlink&quot; title=&quot;4、解析域名&quot;&gt;&lt;/a&gt;4、解析域名&lt;/h4&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>搭建vpn</title>
+    <link href="http://www.hegangjupao.com/2018/04/20/hexo-demo/"/>
+    <id>http://www.hegangjupao.com/2018/04/20/hexo-demo/</id>
+    <published>2018-04-20T01:07:32.000Z</published>
+    <updated>2018-04-20T06:22:47.969Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="搭建vpn"><a href="#搭建vpn" class="headerlink" title="搭建vpn"></a>搭建vpn</h3><h4 id="一、购买服务器"><a href="#一、购买服务器" class="headerlink" title="一、购买服务器"></a>一、购买服务器</h4><ol><li>购买国外服务器的地址：”<a href="https://my.vultr.com/welcome/&quot;(中文教程：https://buy.shangyufeidi.com/vultr/jiaocheng/)" target="_blank" rel="noopener">https://my.vultr.com/welcome/&quot;(中文教程：https://buy.shangyufeidi.com/vultr/jiaocheng/)</a></li></ol><h4 id="二、链接服务器：ssh-root-服务器地址"><a href="#二、链接服务器：ssh-root-服务器地址" class="headerlink" title="二、链接服务器：ssh root@服务器地址"></a>二、链接服务器：ssh root@服务器地址</h4><ol><li>例如：ssh <a href="mailto:root@45.32.165.118" target="_blank" rel="noopener">root@45.32.165.118</a></li><li>断开服务器：logout</li></ol><a id="more"></a><h4 id="三、-安装shadowsocks"><a href="#三、-安装shadowsocks" class="headerlink" title="三、 安装shadowsocks"></a>三、 安装shadowsocks</h4><h5 id="1-更新apt-get"><a href="#1-更新apt-get" class="headerlink" title="1. 更新apt-get"></a>1. 更新apt-get</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1. apt-get update</span><br><span class="line">2. apt-get install python-pip //安装python-pip</span><br></pre></td></tr></table></figure><h5 id="2-安装python-pip"><a href="#2-安装python-pip" class="headerlink" title="2. 安装python-pip"></a>2. 安装python-pip</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1. sudo apt-get purge python-pip</span><br><span class="line">2. wget https://bootstrap.pypa.io/get-pip.py</span><br><span class="line">3. python get-pip.py</span><br><span class="line">4. hash -r</span><br></pre></td></tr></table></figure><h5 id="3-安装shadowsocks"><a href="#3-安装shadowsocks" class="headerlink" title="3. 安装shadowsocks"></a>3. 安装shadowsocks</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1. pip install shadowsocks // 安装shadowsocks</span><br><span class="line">2. ssserver -c /etc/shadowsocks.json -d start //启动shadowsocks</span><br></pre></td></tr></table></figure><h5 id="4-配置shadowsocks"><a href="#4-配置shadowsocks" class="headerlink" title="4. 配置shadowsocks"></a>4. 配置shadowsocks</h5><ol><li><p>在服务器/etc文件夹下创建shadowsocks.json，需要自己创建，默认是没有的 注意端口修改的是server_port, local_port是固定的,password是连接此服务端口的密码</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;server&quot;: &quot;0.0.0.0&quot;,</span><br><span class="line">  &quot;server_port&quot;: 6789,//端口</span><br><span class="line">  &quot;local_address&quot;: &quot;127.0.0.1&quot;,</span><br><span class="line">  &quot;local_port&quot;: 1080,</span><br><span class="line">  &quot;password&quot;: &quot;******&quot;,</span><br><span class="line">  &quot;timeout&quot;: 300,</span><br><span class="line">  &quot;method&quot;: &quot;aes-256-cfb&quot;,</span><br><span class="line">  &quot;fast_open&quot;: false,</span><br><span class="line">  &quot;workers&quot;: 1</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>配置以后重启shadowsocks:</p></li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ssserver -c /etc/shadowsocks.json -d restart</span><br></pre></td></tr></table></figure><h4 id="四、配置aws和使用shadowsocks翻墙"><a href="#四、配置aws和使用shadowsocks翻墙" class="headerlink" title="四、配置aws和使用shadowsocks翻墙"></a>四、配置aws和使用shadowsocks翻墙</h4><ol><li>安装之后，添加服务器，地址为AWS的外网地址，登录AWS控制台，查看正在运行中的实例，找到公有ip。 端口号为刚才配置Shadowsocks服务器时的端口号，密码也是刚才配置的，设置完之后保存</li><li>配置好shaodowsocks后，还需要将配置中的端口打开,这样客户端的服务才能链接得上shadowsocks服务</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;搭建vpn&quot;&gt;&lt;a href=&quot;#搭建vpn&quot; class=&quot;headerlink&quot; title=&quot;搭建vpn&quot;&gt;&lt;/a&gt;搭建vpn&lt;/h3&gt;&lt;h4 id=&quot;一、购买服务器&quot;&gt;&lt;a href=&quot;#一、购买服务器&quot; class=&quot;headerlink&quot; title=&quot;一、购买服务器&quot;&gt;&lt;/a&gt;一、购买服务器&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;购买国外服务器的地址：”&lt;a href=&quot;https://my.vultr.com/welcome/&amp;quot;(中文教程：https://buy.shangyufeidi.com/vultr/jiaocheng/)&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://my.vultr.com/welcome/&amp;quot;(中文教程：https://buy.shangyufeidi.com/vultr/jiaocheng/)&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&quot;二、链接服务器：ssh-root-服务器地址&quot;&gt;&lt;a href=&quot;#二、链接服务器：ssh-root-服务器地址&quot; class=&quot;headerlink&quot; title=&quot;二、链接服务器：ssh root@服务器地址&quot;&gt;&lt;/a&gt;二、链接服务器：ssh root@服务器地址&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;例如：ssh &lt;a href=&quot;mailto:root@45.32.165.118&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;root@45.32.165.118&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;断开服务器：logout&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>

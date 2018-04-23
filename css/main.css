@@ -1760,11 +1760,11 @@ pre .javascript .function {
   display: block;
   margin: 0 auto;
   padding: 2px;
-  max-width: 120px;
-  height: auto;
+  width: 80px;
+  height: 80px;
   border: 1px solid #eee;
 /* 头像圆形 */
-  border-radius: 80px;
+  border-radius: 200px;
   -webkit-border-radius: 80px;
   -moz-border-radius: 80px;
   box-shadow: inset 0 -1px 0 #333 sf;
@@ -1938,7 +1938,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #b4ccd6;
+  background: #69ffff;
 }
 .links-of-blogroll {
   font-size: 13px;

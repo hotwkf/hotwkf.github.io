@@ -12,12 +12,34 @@
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*上边框颜色*/
+        border-left-color: #1E92FB;    /*左边框颜色*/
+    }
+</style>
 <meta name="theme-color" content="#222">
 
 
 
 
 
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
 
 
 
@@ -102,13 +124,14 @@
 
 
   <meta name="description" content="搭建vpn一、购买服务器 购买国外服务器的地址：”https://my.vultr.com/welcome/&amp;quot;(中文教程：https://buy.shangyufeidi.com/vultr/jiaocheng/)  二、链接服务器：ssh root@服务器地址 例如：ssh root@45.32.165.118 断开服务器：logout">
+<meta name="keywords" content="vpn">
 <meta property="og:type" content="article">
 <meta property="og:title" content="搭建vpn">
 <meta property="og:url" content="http://www.hegangjupao.com/2018/04/20/hexo-demo/index.html">
 <meta property="og:site_name" content="Hotwkf">
 <meta property="og:description" content="搭建vpn一、购买服务器 购买国外服务器的地址：”https://my.vultr.com/welcome/&amp;quot;(中文教程：https://buy.shangyufeidi.com/vultr/jiaocheng/)  二、链接服务器：ssh root@服务器地址 例如：ssh root@45.32.165.118 断开服务器：logout">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-04-20T06:22:47.969Z">
+<meta property="og:updated_time" content="2018-04-23T07:07:19.782Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建vpn">
 <meta name="twitter:description" content="搭建vpn一、购买服务器 购买国外服务器的地址：”https://my.vultr.com/welcome/&amp;quot;(中文教程：https://buy.shangyufeidi.com/vultr/jiaocheng/)  二、链接服务器：ssh root@服务器地址 例如：ssh root@45.32.165.118 断开服务器：logout">
@@ -241,14 +264,6 @@
         
         
           
-          <li class="menu-item menu-item-categories">
-    <a href="/categories/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />Categories</a>
-  </li>
-        
-        
-        
-          
           <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
@@ -344,12 +359,24 @@
                 
               
 
-              <time title="Created: 2018-04-20 09:07:32 / Modified: 14:22:47" itemprop="dateCreated datePublished" datetime="2018-04-20T09:07:32+08:00">2018-04-20</time>
+              <time title="Created: 2018-04-20 09:07:32" itemprop="dateCreated datePublished" datetime="2018-04-20T09:07:32+08:00">2018-04-20</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-04-23 15:07:19" itemprop="dateModified" datetime="2018-04-23T15:07:19+08:00">2018-04-23</time>
               
             
           </span>
@@ -431,6 +458,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/vpn/" rel="tag"># vpn</a>
+          
+        </div>
       
 
       
@@ -536,6 +569,23 @@
               
 
               
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
             </nav>
           
 
@@ -608,7 +658,9 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
@@ -620,9 +672,12 @@
 </div>
 
 
-
-
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.7.1</div>
+<!--
+<div class="powered-by">
+由
+<a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a>
+强力驱动
+</div>
 
 
 
@@ -632,7 +687,7 @@
 
   <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Pisces</a> v6.2.0</div>
 
-
+-->
 
 
         
